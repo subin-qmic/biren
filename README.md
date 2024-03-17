@@ -1,40 +1,29 @@
-# Dershane Öğrenci Takip Uygulaması
+Student Tracking Application for Tutorial Centers
 
-Bu uygulama Flutter ile 2023 Nisan ayında başlamıştır.
+This application was started in April 2023 with Flutter.
 
-### Projeyi Kopyala
-
-```bash
+Clone the Project
+bash
+Copy code
   git clone https://github.com/Hazret-Apps/biren.git
-```
-
-Bu uygulama ile admin olarak giriş yapan öğretmen veya yönetici ([Admin Uygulaması](https://github.com/Hazret-Apps/biren-admin)) öğrenci için:
+With this application, a teacher or administrator logging in as admin (Admin Application) can for a student:
 
 <img src="/screenshots/admin_home_view.png" width=35%>
-
-> Ödev Oluşturabilir,
-
-
-> Duyuru Oluşturabilir,
-
-
-> Yoklama Alabilir,
-
-
-> Deneme sonucu girebilir
-
-### Ödev Oluşturma Algoritması
-Ödev oluştururken öğretmen bir tarihi, öğrenciyi, dersi ve konuyu girer. Seçilen öğrenci anasayfasındaki takvimde ve ödevler kısmında ödevini görür. Tamamladığı zaman "tamamlandı" seçeneğini işaretler ve ödevinin fotoğrafını çeker. Öğretmen ise gelen ödevler içerisinde öğrencinin ödevini görür ve "yaptı, yapmadı veya eksik" olarak işaretler.
+Create Homework,
+Create Announcements,
+Take Attendance,
+Enter exam results
+Homework Creation Algorithm
+When creating homework, the teacher enters a date, the student, the subject, and the topic. The selected student sees their homework on the calendar on their homepage and in the homework section. When completed, they mark the "completed" option and take a photo of their homework. The teacher then sees the student's homework among the received homework and marks it as "done, not done, or incomplete".
 
 <img src="/screenshots/create_homework_view.png" width=35%>
-
-### Duyuru Oluşturma Algoritması
-Öğretmen belli bir öğrenci grubuna veya herkese fotoğraf veya PDF ile birlikte duyuru atabilir.
+Announcement Creation Algorithm
+The teacher can send announcements to a certain group of students or everyone, along with a photo or PDF.
 
 <img src="/screenshots/create_announcement_view.png" width=35%>
+Packages
 
-## Paketler
-- [easy_localization](https://pub.dev/packages/easy_localization) (Uygulama dil desteği için)
-- [firebase_core](https://pub.dev/packages/firebase_core) (+ diğer temel Firebase paketleri)
-- [kartal](https://pub.dev/packages/kartal) (Context extension)
-- [image_picker](https://pub.dev/packages/image_picker)
+easy_localization (For app language support)
+firebase_core (+ other basic Firebase packages)
+kartal (Context extension)
+image_picker
